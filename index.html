@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b49d9bb7a2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="navigationBar">
+        <img src="logo.png" alt="">
+        <span>Spotify</span>
+        <a href="">Home</a>
+        <a href="">About</a>
+
+    </div>
+
+    <div class="containerOfSongs">
+        <div class="containerOfPlayLIstHeading">
+            <img src="playlistCover/IMG_20210925_133518.jpg"  alt="">
+            <h2><span class="colores">Colores</span>- J Balvin..</h2>
+
+        </div>
+        <div class="songsPlaylist">
+            
+
+
+        </div>
+    </div>
+
+    <div class="songPlayerContainer">
+        <!-- audio player -->
+        <div class="containerOfAudioPlayer">
+
+            <audio id="audioPlayerOfHtml" src="" controls></audio>
+        </div>
+       
+
+        <div class="gifAndName">
+            <img src="playing.gif" alt="">
+            <span class="currentSongName">song name is here</span>
+
+        </div>
+
+        <div class="playPauseAndMore ">
+            <i class="fa fa-step-backward" id="prevSong" onclick="nextOrPrevSong(-1)" aria-hidden="true"></i>
+            <div class="onlyPlayPause">
+                <i class="fa fa-play-circle-o" aria-hidden="true" id="play"></i>
+                <i class="fa fa-pause-circle-o" aria-hidden="true" id="pause"></i>
+
+            </div>
+            <i class="fa fa-step-forward" id="nextSong" onclick="nextOrPrevSong(1)" aria-hidden="true"></i>
+
+        </div>
+
+
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
